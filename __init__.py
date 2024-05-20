@@ -72,7 +72,7 @@ async def handle_function():
 LaoYa = on_regex(pattern=r"^超级?(小|牢)?特$", rule=to_me, block=True)
 
 # 指定图片文件的路径
-img_path = Path(os.path.join(os.path.dirname(__file__), "E:/project/Feipo/FeipoBot/res/aimen_pic"))
+img_path = Path(os.path.join(os.path.dirname(__file__), "Set your imgfile here"))
 file_name = "震惊.jpg"
 file_path = img_path.joinpath(file_name)
 
@@ -92,17 +92,7 @@ async def handle_function():
     await LaoYa.send("我打罗德岛？真的假的？")
 
 
-plg_helper = on_fullmatch(msg="机器人帮助",rule=to_me,block=True)
-@plg_helper.handle()
-async def handle_function():
-    await plg_helper.send(
-        "\n"
-        "-------------指令系统---------------\n"
-        "[疯狂星期X] 随机输出KFC疯狂星期四文案\n"
-        "使用指令:(/早安或者晚安),触发器是斜杠(/),\n示例：/早安\n"
-        "吃啥:\n今天吃什么/啥/点啥\n今天喝什么/啥/点啥\n"
-        "抓个群友当老婆：今日老婆"
-        )
+
 
 config = get_plugin_config(Config)
 
