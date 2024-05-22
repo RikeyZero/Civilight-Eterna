@@ -89,7 +89,7 @@ async def handle_function():
     # 发送消息，包含图片
     
     await LaoYa.send(MessageSegment.image(base64_str))
-    await LaoYa.send("我打罗德岛？真的假的？")
+    await LaoYa.send("Set the msg you want the bot reply")
 
 
 
