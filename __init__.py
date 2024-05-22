@@ -73,7 +73,7 @@ LaoYa = on_regex(pattern=r"^超级?(小|牢)?特$", rule=to_me, block=True)
 
 # 指定图片文件的路径
 img_path = Path(os.path.join(os.path.dirname(__file__), "Set your imgfile here"))
-file_name = "震惊.jpg"
+file_name = "Set Your img file name"
 file_path = img_path.joinpath(file_name)
 
 
